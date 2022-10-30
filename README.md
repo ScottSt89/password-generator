@@ -10,9 +10,11 @@ I've created a very useful password generator, using HTML, CSS, and JavaScript, 
 
 - Starter code provided by GitHub user <a href = "https://github.com/coding-boot-camp/friendly-parakeet">Xandromus</a>.
 - Password Special Characters list provided by <a href = "https://owasp.org/www-community/password-special-characters">OWASP</a>
+- Helpful pseudo coding tips provided by <a href = "https://youtu.be/x4HUaiazDes">Paul Keldsen - Web Development</a>
 - Tutorial and other helpful tips provided by <a href = "https://youtu.be/v2jfGo7ztm8">Daniel Vega</a>.
 
-## Deployed URL: 
+## Deployed URL:
+
 https://scottst89.github.io/password-generator/
 
 ![](Develop/image/password-generator-screenshot.JPG)
