@@ -1,6 +1,5 @@
 var characterLength = 8;
 var selectionArr = [];
-
 var specialCharArr = [
   " ",
   "!",
@@ -96,25 +95,30 @@ var upperCaseArr = [
 ];
 var numberArr = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
 
-// var specialCharArr = [" !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~""];
-// Assignment code here
-
-// Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
 function writePassword() {
-  getPrompts();
-  var password = generatePassword();
+  var correctPrompts = getPrompts();
   var passwordText = document.querySelector("#password");
 
-  passwordText.value = password;
+  if (correctPrompts) {
+    var newPassword = generatePassword();
+    passwordText.value = newPassword;
+  } else {
+    passwordText.value = "";
+  }
 }
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-function generatePassword() {}
+function generatePassword() {
+  var password = "";
+  for (var i = 0; i < characterLength; i++) {
+    var randomIndex = Math.floor(Math.random() * selectionArr.length);
+    password = password + selectionArr[randomIndex];
+  }
+  return password;
+}
 
 function getPrompts() {
   selectionArr = [];
@@ -148,5 +152,3 @@ function getPrompts() {
   }
   return true;
 }
-
-// min-value = 8; max-value = 128;
