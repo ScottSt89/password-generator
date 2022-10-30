@@ -13,3 +13,6 @@ I've created a very useful password generator, using HTML, CSS, and JavaScript, 
 - Tutorial and other helpful tips provided by <a href = "https://youtu.be/v2jfGo7ztm8">Daniel Vega</a>.
 
 ## Deployed URL: 
+https://scottst89.github.io/password-generator/
+
+![](Develop/image/password-generator-screenshot.JPG)
